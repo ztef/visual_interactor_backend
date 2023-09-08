@@ -1,8 +1,8 @@
 {
-  "package-name": "vixbsqlerver",
-  "name": "vixbsqlerver",
+  "package-name": "visual_interactor_server",
+  "name": "visual_interactor_server",
   "version": "1.0.0",
-  "description": "VIX Generic MiddleWare for SQLSERVER",
+  "description": "VIX visual interactor server",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
