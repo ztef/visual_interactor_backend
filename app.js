@@ -54,18 +54,31 @@ app.use(express.static('public'));
 
 router.get('/getMenu',(_req, res) => {
   if(_req.query.usr == 'visualcemex'){
-    res.sendFile(__dirname + "/menucemex.html");
+    res.sendFile(__dirname + "/public/customers/cemex/menucemex.html");
   } else {
-     res.sendFile(__dirname + "/menu.html");
+     res.sendFile(__dirname + "/public/customers/general/menu.html");
   }
 });
 
 router.get('/getMain',(_req, res) => {
+
   if(_req.query.usr == 'visualcemex'){
-    res.sendFile(__dirname + "/wellcomecemex.html");
+
+      res.redirect('/customers/cemex/index.html'); 
   } else {
-     res.sendFile(__dirname + "/wellcome.html");
+    
+    res.sendFile(__dirname + "/public/customers/general/wellcome.html");
   }
+
+
+
+  /*
+  if(_req.query.usr == 'visualcemex'){
+    res.sendFile(__dirname + "/public/customers/cemex/wellcomecemex.html");
+  } else {
+     res.sendFile(__dirname + "/public/customers/general/wellcome.html");
+  }
+  */
 });
 
 
