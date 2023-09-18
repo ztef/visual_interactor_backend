@@ -1,7 +1,75 @@
 <html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline';
+        img-src 'self' data:;
+        style-src 'self' 'unsafe-inline';
+        font-src 'self' data:;">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+        <title>Visual Interactor</title>
+
+        <style>
+            /* CSS to set the background image */
+            body {
+                background-image: url('/customers/general/backgrnd.png'); 
+                background-size: cover; 
+                background-repeat: no-repeat; 
+                background-attachment: fixed; 
+            }
+
+            .container {
+                    position: relative;
+                    height: 130vh; /* 50% of the viewport height */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                }
+    
+            /* Additional styles for the content */
+            .content {
+                text-align: center;
+                padding: 50px;
+                color: #fff;
+            }
+
+            .custom-download-icon {
+                display: inline-block;
+                width: 24px; /* Adjust the size as needed */
+                height: 24px; /* Adjust the size as needed */
+                background-image: url('path-to-your-custom-icon.png');
+                background-size: cover;
+            }
+
+            .positioned-div {
+                width: 200px; /* Set the width of your div as needed */
+                height: 50%; /* Set the height to 50% (half of the container's height) */
+                background-color: #f0f0f0;
+                position: relative;
+                top: 50%; /* Shift the div down by 50% of its own height */
+                transform: translateY(-50%); /* Correct the positioning by moving it up by 50% of its own height */
+            }
+
+
+        </style>
+
+    </head>
     <body>
-        <h1>
-            WELLCOME TO VisualInteractor v1.0.0
-        </h1>
+        <div class="container">
+            <div class="positioned-div">
+            <h1>Windows Download</h1>
+            <p>
+                <a href="/installer/x64/visual_interactor_setup.exe" download>
+                    <i class="fa fa-download"></i> Visual Interactor for Windows(.exe)
+                </a>
+            </p>
+            <p>After downloading, double-click the downloaded file to install the application.</p>
+        </div>
+        </div>
     </body>
 </html>
