@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    img-src 'self' data:;
+    style-src 'self' 'unsafe-inline';
+    font-src 'self' data:;">
+  <title>Load Project</title>
+  <style>
+    /* Add any custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    button {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <label for="url">Load Project from URL:</label>
+  <input id="url" type="text">
+  <button id="btn" type="button">Load</button>
+  <script src="./renderer.js"></script>
+</body>
+</html>
