@@ -2,7 +2,7 @@
 Visual Interaction Systems Corp.
 
 
-Proyecto VISUAL GENERIC SERVER 
+Proyecto VISUAL GENERIC SERVER v1
 
 
 
@@ -11,16 +11,10 @@ Proyecto VISUAL GENERIC SERVER
 
 
 const express = require('express')
-const sql = require('mssql')
-var moment = require('moment');
+ 
 const cors = require('cors');
 const fs = require('fs');
-const { rawListeners } = require('process');
-
-
-
-
-
+ 
 
 
 const app = express();
