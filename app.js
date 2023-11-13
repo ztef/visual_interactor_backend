@@ -2,7 +2,7 @@
 Visual Interaction Systems Corp.
 
 
-Proyecto VISUAL GENERIC SERVER v1
+Proyecto VISUAL GENERIC SERVER v1gi
 
 
 
